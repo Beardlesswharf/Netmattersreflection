@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'poppins', sans-serif;
+    a:-webkit-any-link { text-decoration: none !important; }
+}
+
+html {
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    }
+   
+body {
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .4px;
+    line-height: 22.85px;
+    color: #666;
+    height: 100%;
+    margin: 0;
+    // width: 10000px;
+}
+// #wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     // width: 100vw;
+//     // width: 100vw;
+//     // padding-right: 15px;
+//      }
+// .main-outer {
+//     height: 100%;
+//     // width: 100vw;
+//      //problem with scroll bar guttering
+// }

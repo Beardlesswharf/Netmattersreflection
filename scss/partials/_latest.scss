@@ -1,0 +1,284 @@
+ 
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+      h2 {
+        padding-top: 50px;
+        margin-bottom: 30px;
+        font-size: 36px;
+        color: $primary-color;
+        font-weight: bold;
+      }
+  }
+  .img-smllogo {
+    img {
+    height: 47px;
+    width: 47px;
+    border-radius: 100%;
+  }
+}
+ 
+  .news-col {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    position: relative;
+    transition: transform ease 500ms;
+    
+     }
+  
+  .news-col:hover {
+    transform: translate(0, -10px);
+  }  
+     
+  .news-seo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    max-width: 720px;
+    box-shadow: rgba(0,0,0,0.1) 0px 3px 35px 0px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .news-img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .mini-news:hover {
+    text-decoration: underline;
+    
+  }
+  .news-text {
+    padding: 30px 30px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+   }
+  
+    @mixin mini-news {
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      font-size: 13px;
+      padding: 1px 10px;
+      color: white;
+      text-decoration-style: solid;
+      text-decoration: none;
+      z-index: 3;
+      }
+  .mini-news {
+    @include mini-news;
+    background-color: #2ECC71;
+     }   
+  
+  .mini-news1 {
+    @include mini-news;
+    background-color: $telecom-color1;
+     }   
+  
+     .mini-news2 {
+      @include mini-news;
+      background-color: $software-color1;
+       }  
+   
+     @mixin news-button {
+      @include welcome-btns;
+      padding: 10px 15px;
+      border-radius: 3px;
+      margin-top: 30px;
+      font-size: 17px;
+      margin-bottom: 0px;
+    }
+  
+  .news-button {
+    @include welcome-btns;
+    @include news-button;
+    background-color: #2ECC71;
+  }
+  .news-button1 {
+    @include welcome-btns;
+    @include news-button;
+    background-color: $telecom-color1;
+  }
+  .news-button2 {
+    @include welcome-btns;
+    @include news-button;
+    background-color: $software-color1;
+  }
+  @mixin h3-news {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  .h3-news {
+    @include h3-news;
+    color: #2ECC71;
+  }
+  .h3-news1 {
+    @include h3-news;
+    color: $telecom-color1;
+  }
+  .h3-news2 {
+    @include h3-news;
+    color: $software-color1;
+  }
+
+  .user {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+  .user-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+      p {
+      font-size: .875rem;
+      color: $primary-color;
+      margin-bottom: 4px;
+     }
+  }
+
+  .p-weak {
+    font-size: .875rem;
+    margin-top: -30px;
+   
+     p {
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+     }
+    }
+  
+  .view-cont {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    font-size: 26px;
+  }
+.hidden-bottom {
+  justify-content: center;
+}
+
+  .view-all {
+    width: 139.16px;
+    flex-direction: row;
+    text-decoration: none; 
+    color: $primary-color;
+     .fa-arrow-right {
+      margin-left: 3px;
+     }
+  }
+  .view-all:hover {
+    border-bottom: 2px solid $primary-color;
+  }
+
+  @media (max-width :$breakpoint-xs) {
+    .mini-news {
+      top: 50px;
+      right: 0px;
+    }
+  }
+  @media (min-width :$breakpoint-xs) {
+    .news-3-col {
+      display: flex;
+      flex-direction: row;
+      width: 750px;
+      justify-content: center;
+      margin: 0 auto;
+      padding-bottom: 50px;
+      
+    }
+   
+    .news-heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 750px;
+      margin: 0 auto;
+      padding: 0 15px;
+      padding-bottom: 20px;
+        h2 {
+          padding-top: 50px;
+          margin-top: 10px;
+        }
+    }
+      .news-seo, .news-text {
+        width: 345px;
+      }
+      .news-col {
+       
+        padding: 0 15px;
+      }
+      .news {
+        padding: 0px;
+      }
+      .hide-this {
+        display: none;
+      }
+      .hidden-bottom {
+        display: none;
+      }
+  }
+  @media (max-width :$breakpoint-xs) {
+  .appear-top {
+    display: none;
+  }
+}
+
+  @media (min-width :$breakpoint-s) {
+    .news-3-col {
+      width: 940px;
+    }
+    .news-heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 940px;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 2px;
+    }
+    .news-seo, .news-text {
+      width: 455px;
+    }
+  }
+  @media (min-width :$breakpoint-m) {
+    .news-3-col {
+      width: 1200px
+    }
+    .news-heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      padding-bottom: 20px;
+    }
+    .news-seo, .news-text {
+      width: 369px;
+    }
+    .hide-this {
+      display: flex;
+    }
+  }
+  @media (max-width :$breakpoint-m) {
+    .large-bp-gap {
+      display: none;
+    }
+  }
+ 
