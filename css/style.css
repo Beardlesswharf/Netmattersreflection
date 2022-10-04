@@ -407,6 +407,7 @@ header {
   color: #fff;
   background-color: #333645;
   border-color: #333645;
+  border-style: solid;
   padding: 5px 15px;
   border-radius: 3px;
   margin-left: 16px;
